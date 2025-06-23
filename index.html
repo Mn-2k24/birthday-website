@@ -407,7 +407,23 @@
     #page5 {
       background: linear-gradient(rgba(92, 37, 141, 0.85), rgba(44, 11, 59, 0.95)),url('/images/5th\ page.jpeg');
       background-attachment: fixed;
+       height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* default */
     }
+
+    .gallery-scroll-box {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 60vh; /* Set scroll height here */
+}
     
     .gallery-container {
       max-width: 1200px;
@@ -649,7 +665,8 @@
         Here is a small gift for you from your Husband
       </div>
     </div>
-    
+
+    <div class="gallery-scroll-box"> 
     <div class="gallery-container">
       <div class="gallery-item">
         <img src="images/pic 1.jpeg" alt="Our memory">
@@ -698,6 +715,7 @@
           <div class="gallery-date">My wifee</div>
         </div>
       </div>
+    </div>
     </div>
     
     <!-- ADDED BUTTON TO GO TO PAGE 6 -->
